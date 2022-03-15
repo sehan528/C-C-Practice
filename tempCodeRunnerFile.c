@@ -24,7 +24,7 @@ int main() {
                 }
                 printf("\n");
             }
-            printf("\n \n");
+            printf("-----\n");
             count++; 
         case 1:
             for(int i = 0; i < 3; i++) {
@@ -34,11 +34,28 @@ int main() {
                 }
                 printf("\n");
             }
-            count++; 
+            printf("-----\n");
+            count++;  
         case 2:
-            
+            for(int i = 0; i < 3; i++) {
+                for(int j = 0; j < 3; j++) {
+                    c[i][j] = a[i][j] * b[i][j];
+                    printf("%02d",c[i][j]);
+                }
+                printf("\n");
+            }
+            printf("-----\n");
+            count++; 
         case 3:
-            
+            for(int i = 0; i < 3; i++) {
+                for(int j = 0; j < 3; j++) {
+                    c[i][j] = a[i][j] / b[i][j];
+                    printf("%02d",c[i][j]);
+                }
+                printf("\n");
+            }
+            printf("-----\n");
+            count++; 
         default:
             printf("that it!");
             break;
